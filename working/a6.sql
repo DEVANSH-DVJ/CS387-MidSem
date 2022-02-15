@@ -28,4 +28,4 @@ AS (
 SELECT region
 FROM final
 WHERE gold_games = summer_games
-ORDER BY region ASC;
+ORDER BY LOWER(region) ASC;
