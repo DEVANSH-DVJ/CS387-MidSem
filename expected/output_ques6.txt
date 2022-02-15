@@ -1,0 +1,11 @@
+   region   
+------------
+ Belarus
+ Hungary
+ Kazakhstan
+ Kosovo
+ UK
+ Ukraine
+ USA
+(7 rows)
+
