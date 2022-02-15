@@ -6,6 +6,7 @@ FROM (
     count(DISTINCT id) AS athlete_count
   FROM athlete_events
   GROUP BY games
-  ) AS games_counts
-LEFT OUTER JOIN host_cities ON games_counts.games = host_cities.games
+  ) AS games_counts,
+  host_cities
+WHERE games_counts.games = host_cities.games
 ORDER BY host_cities.games ASC;
